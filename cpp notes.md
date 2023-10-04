@@ -122,12 +122,12 @@ int main(){
 ```
 ## find min/max
 ```cpp
-        if (min > input && input > 0) { 
-            min = input;
-        }
-        if (max < input) {
-            max = input;
-        }
+if (min > input && input > 0) {
+	min = input;
+}
+if (max < input) {
+	max = input;
+}
 ```
 another way
 ```cpp
@@ -142,9 +142,8 @@ max = value;
 ```
 ## factorial and set precision
 ```cpp
-for (i = 1; i < input; i++) {
-	mathden *= i; // find the new factorial i! by multiplying i(i-1)!
-	mathadd += (1/mathden); // finds new sum
+for (i = 1; i < number; i++) {
+	factorial *= i; // find the new factorial i! by multiplying i(previous_factorial)!
 }
 std::cout << std::setprecision(15) << mathadd;
 ```
